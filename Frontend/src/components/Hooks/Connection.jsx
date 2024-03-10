@@ -36,7 +36,7 @@ export const BiconomyProvider = ({ children }) => {
   const [accountAddress, setAccountAddress] = useState(null);
 
 
-  const { provider } = useEthereum();
+  const { provider,address } = useEthereum();
   const { connect, disconnect } = useConnect();
   const { userInfo } = useAuthCore();
 
@@ -52,7 +52,7 @@ export const BiconomyProvider = ({ children }) => {
     }
   });
 
-  const customProvider = new ethers.providers.Web3Provider(new AAWrapProvider(smartAccount, SendTransactionMode.Gasless), "any");
+  const customProvider = provider;
   const [balance, setBalance] = useState(null);
 
   useEffect(() => {
@@ -62,8 +62,10 @@ export const BiconomyProvider = ({ children }) => {
   }, [userInfo, smartAccount, customProvider]);
 
   const fetchBalance = async () => {
-    const address = await smartAccount.getAddress();
-    const balanceResponse = await customProvider.getBalance(address);
+
+  
+    // const address = await userInfo.getAddress();
+    const balanceResponse = await provider.getBalance(address);
     setBalance(ethers.utils.formatEther(balanceResponse));
     localStorage.setItem("smartbal",ethers.utils.formatEther(balanceResponse));
 
