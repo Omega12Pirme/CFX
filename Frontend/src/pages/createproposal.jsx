@@ -32,19 +32,6 @@ async function getContract(userAddress) {
 }
 
 
-async function transferTokens1(){
-  notification.success({
-                message: 'Token Sent Successful',
-                description: (
-                  <div>
-                    Transaction Hash: <a href={'https://ccip.chain.link/msg/0xdec6efc53c798163c704be31e1ffe6a483e83d2147175c2ebd7e77daf121cf8a'} target="_blank" rel="noopener noreferrer"></a>
-                  </div>
-                )
-              });
-        
-}
-
-
 
 async function Registerjob(){
 
@@ -180,6 +167,16 @@ function CreateProposal() {
               };
               const txResponse = await signer.sendTransaction(tx);
               const txReceipt = await txResponse.wait();
+
+              notification.success({
+                message: 'Transaction Successful',
+                description: (
+                  <div>
+                    Transaction Hash: <a href={`https://evmtestnet.confluxscan.net/tx/${txReceipt.transactionHash}`} target="_blank" rel="noopener noreferrer">{txReceipt.transactionHash}</a>
+                  </div>
+                )
+              });
+              console.log(txReceipt.transactionHash);
 
               
 
@@ -384,17 +381,6 @@ function CreateProposal() {
                         placeholder="Give a description for this proposal"
                       />{" "}
                       <br />
-
-                      <p className="votes_available">
-                    Destination Chain: <br />
-                    <select id="option_vote" className="form-control">
-                      <option value={1}>POLYGON MATIC</option>
-                      <option value={0}>POLYGON MAATIC</option>
-                    </select>{" "}
-      
-                  </p>
-
-
                       Destination address:{" "}
                       
                       <input
@@ -426,13 +412,7 @@ onChange={(e) => setDestination(e.target.value)}
                         onClick={() => {
                          
                           createProposal();
-                          transferTokens1(
-                            "avalancheFuji", "polygonMumbai",
-                            "0xb763314D922DE2980bF0a46FC11331B02cc7713A",
-                            "0xD21341536c5cF5EB1bcb58f6723cE26e8D8E90e4",
-                            " 1000000000000000",
-                            "0x0b9d5D9136855f6FEc3c0993feE6E9CE8a297846"
-                          );
+                          
 
                         }}
                         className="btn btn-primary btn-block"
