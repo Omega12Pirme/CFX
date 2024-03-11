@@ -111,17 +111,16 @@ async function leaveClub() {
             
               console.log(txReceipt);
               // console.log("txHash", receipt.transactionHash);
-              const polygonScanlink = `https://mumbai.polygonscan.com/tx/${txHash}`
-              toast.success(<a target="_blank" href={polygonScanlink}>Success ,Click to view transaction</a>, {
-                position: "top-right",
-                autoClose: 18000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "dark",
-                });
+              notification.success({
+                message: 'Transaction Successful',
+                description: (
+                  <div>
+                    Transaction Hash: <a href={`https://evmtestnet.confluxscan.net/tx/${txReceipt.transactionHash}`} target="_blank" rel="noopener noreferrer">{txReceipt.transactionHash}</a>
+                  </div>
+                )
+              });
+
+              console.log(txReceipt.transactionHash);
           }catch(error){
             console.log(error)
           }
@@ -225,7 +224,7 @@ async function leaveClub() {
                 message: 'Transaction Successful',
                 description: (
                   <div>
-                    Transaction Hash: <a href={`https://testnet.snowtrace.io/tx/${txReceipt.transactionHash}`} target="_blank" rel="noopener noreferrer">{txReceipt.transactionHash}</a>
+                    Transaction Hash: <a href={`https://evmtestnet.confluxscan.net/tx/${txReceipt.transactionHash}`} target="_blank" rel="noopener noreferrer">{txReceipt.transactionHash}</a>
                   </div>
                 )
               });
@@ -315,10 +314,11 @@ async function leaveClub() {
                 message: 'Transaction Successful',
                 description: (
                   <div>
-                    Transaction Hash: <a href={`https://testnet.snowtrace.io/tx/${txReceipt.transactionHash}`} target="_blank" rel="noopener noreferrer">{txReceipt.transactionHash}</a>
+                    Transaction Hash: <a href={`https://evmtestnet.confluxscan.net/tx/${txReceipt.transactionHash}`} target="_blank" rel="noopener noreferrer">{txReceipt.transactionHash}</a>
                   </div>
                 )
               });
+
               console.log(txReceipt.transactionHash);
                   
             }catch(error){

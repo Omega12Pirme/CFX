@@ -162,10 +162,11 @@ function Proposal() {
                     message: 'Transaction Successful',
                     description: (
                       <div>
-                        Transaction Hash: <a href={`https://testnet.snowtrace.io/tx/${txReceipt.transactionHash}`} target="_blank" rel="noopener noreferrer">{txReceipt.transactionHash}</a>
+                        Transaction Hash: <a href={`https://evmtestnet.confluxscan.net/tx/${txReceipt.transactionHash}`} target="_blank" rel="noopener noreferrer">{txReceipt.transactionHash}</a>
                       </div>
                     )
                   });
+    
                   console.log(txReceipt.transactionHash);
               
                   
@@ -213,10 +214,11 @@ function Proposal() {
                 message: 'Transaction Successful',
                 description: (
                   <div>
-                    Transaction Hash: <a href={`https://testnet.snowtrace.io/tx/${txReceipt.transactionHash}`} target="_blank" rel="noopener noreferrer">{txReceipt.transactionHash}</a>
+                    Transaction Hash: <a href={`https://evmtestnet.confluxscan.net/tx/${txReceipt.transactionHash}`} target="_blank" rel="noopener noreferrer">{txReceipt.transactionHash}</a>
                   </div>
                 )
               });
+
               console.log(txReceipt.transactionHash);
                 }catch(error){
                   console.log(error)
