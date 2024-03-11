@@ -243,7 +243,7 @@ function CreateProposal() {
         <div className="sidebar-brand-icon rotate-n-15">
           <i className="fas fa-laugh-wink" />
         </div>
-        <div className="sidebar-brand-text mx-3">AVAX Club</div>
+        <div className="sidebar-brand-text mx-3">CFX Club</div>
       </a>
       {/* Divider */}
       <hr className="sidebar-divider my-0" />
@@ -296,7 +296,7 @@ function CreateProposal() {
                   <div className="row no-gutters align-items-center">
                     <div className="col mr-2">
                       <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                        Club Balance (AVAX)
+                        Club Balance (CFX)
                       </div>
                       <div className="h5 mb-0 font-weight-bold text-gray-800 club_balance">
                         -
@@ -403,10 +403,10 @@ function CreateProposal() {
                         className="form-control form-control-user"
                         value={destination}
 onChange={(e) => setDestination(e.target.value)}
-                        placeholder="Enter the AVAX destination address: 0x....."
+                        placeholder="Enter the CFX destination address: 0x....."
                       />{" "}
                       <br />
-                      Amount (in AVAX):{" "}
+                      Amount (in CFX):{" "}
                       <input
                         type="number"
                         id="proposal_amount"

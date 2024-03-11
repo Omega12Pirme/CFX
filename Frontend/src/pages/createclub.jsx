@@ -261,7 +261,7 @@ function CreateClub() {
         <div className="sidebar-brand-icon rotate-n-15">
           <i className="fas fa-laugh-wink" />
         </div>
-        <div className="sidebar-brand-text mx-3">AVAX Club</div>
+        <div className="sidebar-brand-text mx-3">CFX Club</div>
       </a>
       {/* Divider */}
       <hr className="sidebar-divider my-0" />
@@ -317,7 +317,7 @@ function CreateClub() {
                   <div className="row no-gutters align-items-center">
                     <div className="col mr-2">
                       <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                        Balance (AVAX)
+                        Balance (CFX)
                       </div>
                       <div className="h5 mb-0 font-weight-bold text-gray-800 view_balance_address">
                         -
