@@ -52,7 +52,9 @@ export const BiconomyProvider = ({ children }) => {
     }
   });
 
-  const customProvider = provider;
+  const customProvider = new ethers.providers.Web3Provider(provider, "any");
+
+
   const [balance, setBalance] = useState(null);
 
   useEffect(() => {
@@ -65,13 +67,17 @@ export const BiconomyProvider = ({ children }) => {
 
   
     // const address = await userInfo.getAddress();
-    const balanceResponse = await provider.getBalance(address);
+
+    console.log(address)
+    const balanceResponse = await customProvider.getBalance(address);
+
+    // alert(ethers.utils.formatEther(balanceResponse))
     setBalance(ethers.utils.formatEther(balanceResponse));
     localStorage.setItem("smartbal",ethers.utils.formatEther(balanceResponse));
 
    
     setAccountAddress(address);
-    localStorage.setItem("filWalletAddress",await smartAccount.getAddress())
+    localStorage.setItem("filWalletAddress",address)
     
     console.log(ethers.utils.formatEther(balanceResponse))
   };

@@ -17,29 +17,11 @@ import {Web3} from 'web3';
 import { ethers } from "ethers";
 
 
-const web3 = new Web3(new Web3.providers.HttpProvider("https://api.avax-test.network/ext/bc/C/rpc"));
+const web3 = new Web3(new Web3.providers.HttpProvider("https://evmtestnet.confluxrpc.com"));
 var contractPublic = null;
-
-
-async function ShowPrivateKey(){
-  var password = $('#passwordShowPV').val();
-  const my_wallet = await web3.eth.accounts.wallet.load(password);
-  const PrivateKey = my_wallet[0].privateKey;
-
-  try {
-    // var privateKey = CryptoJS.AES.decrypt(localStorage.getItem('aeWalletSecret'), password).toString(CryptoJS.enc.Utf8);
-    $('#privateKetShowed').text(PrivateKey);
-  }
-  catch(err) {
-    alert('The password is wrong. Please, enter the right password.')
-  }
-  $('#passwordShowPV').val('');
-  return false;
-}
 
 async function checkBalance() {
   // console.log(localStorage.getItem("LL"));
-  
   
   try {
     const myWallet = localStorage.getItem("filWalletAddress");

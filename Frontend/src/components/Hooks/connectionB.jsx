@@ -52,7 +52,7 @@ export const BiconomyProvider = ({ children }) => {
     }
   });
 
-  const customProvider = new ethers.providers.Web3Provider(new AAWrapProvider(smartAccount, SendTransactionMode.Gasless), "any");
+  const customProvider = new ethers.providers.Web3Provider(provider, "any");
   const [balance, setBalance] = useState(null);
 
   useEffect(() => {
