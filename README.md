@@ -34,7 +34,7 @@ Therefore, through DAO (decentralized organizations) we can create structures so
 
 
 ## Smart Contract deployed on Conflux testnet testnet
-- Smart contract -
+- Smart contract -0x2C8e10de89319BEdD4535fe668B659e6e1dF5593
 - https://evmtestnet.confluxscan.net/address/0x2c8e10de89319bedd4535fe668b659e6e1df5593
 
   ![Screenshot from 2024-03-12 10-14-21](https://github.com/Vikash-8090-Yadav/UHACK/assets/85225156/766acb22-cf33-4e22-aa1b-7cf4c666c096)
