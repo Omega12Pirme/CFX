@@ -1,4 +1,4 @@
-# This project is made under Avalanche Frontier: Decentralized Consumer Application Hackathon
+# This project is made under U HACK
 
 ![image](https://github.com/Vikash-8090-Yadav/TreasuryAvlanch/assets/85225156/751cd465-f947-438b-873d-3920f33481f3)
 
