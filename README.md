@@ -22,7 +22,6 @@ Therefore, through DAO (decentralized organizations) we can create structures so
 - [Introduction](#introduction)
 - [Installation](#-setting-up-the-project-locally)
 - [Challenges we ran into](#-challenges-we-ran-into)
-- [ChainLink](#ChainLinkCCIP)
 - [Technologies we used](#%EF%B8%8Ftechnologies-we-used)
 - [Video Demo](#-video-demo)
 - [Contributing](#-contributing)
