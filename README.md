@@ -1,8 +1,6 @@
-![image](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/026c1c96-665e-4d6b-a3ea-34650509ea63)# This project is made under U HACK
+# This project is made under U HACK
 
 ![Screenshot from 2024-03-12 10-08-04](https://github.com/Vikash-8090-Yadav/UHACK/assets/85225156/aadc70ae-bf91-4486-8294-d77cf0bb42e0)
-
-
 
 
 
@@ -35,9 +33,9 @@ Therefore, through DAO (decentralized organizations) we can create structures so
 
 ## Smart Contract deployed on Conflux testnet testnet
 - Smart contract -0x2C8e10de89319BEdD4535fe668B659e6e1dF5593
-  - https://evmtestnet.confluxscan.net/address/0x2c8e10de89319bedd4535fe668b659e6e1df5593
+- https://evmtestnet.confluxscan.net/address/0x2c8e10de89319bedd4535fe668b659e6e1df5593
 
-  ![Screenshot from 2024-03-12 10-14-21](https://github.com/Vikash-8090-Yadav/UHACK/assets/85225156/766acb22-cf33-4e22-aa1b-7cf4c666c096)
+![Screenshot from 2024-03-12 10-14-21](https://github.com/Vikash-8090-Yadav/UHACK/assets/85225156/766acb22-cf33-4e22-aa1b-7cf4c666c096)
 
 
 - Particle Network EOA - 0x579d7FD1D8499D6b4Aa1e48aEEcb903ff9cd8D4F
@@ -51,13 +49,12 @@ https://evmtestnet.confluxscan.net/address/0x579d7fd1d8499d6b4aa1e48aeecb903ff9c
 
 
 - web2 user  onboard: I  am uisng particle network for the Login which show Common authentication mechnaism like Google,Discord,Facebook
-- 
+
+
 ![Screenshot from 2024-03-12 10-17-27](https://github.com/Vikash-8090-Yadav/UHACK/assets/85225156/d2cbddb4-3d7e-482c-be9f-a5ad0215279a)
 
 
-
-
-  **Particle Network EOA for onbaording **
+**Particle Network EOA for onbaording **
 
 ![Screenshot from 2024-03-12 10-19-41](https://github.com/Vikash-8090-Yadav/UHACK/assets/85225156/a8a69992-cd1a-4163-b348-eefa3718d187)
 
@@ -65,6 +62,7 @@ https://evmtestnet.confluxscan.net/address/0x579d7fd1d8499d6b4aa1e48aeecb903ff9c
 
 
 -- User Operation :  All useroperation started with this code 
+
 
 ```
  const signer = provider.getSigner();
@@ -79,6 +77,7 @@ https://evmtestnet.confluxscan.net/address/0x579d7fd1d8499d6b4aa1e48aeecb903ff9c
 
               );
 ```
+
 All code for   Smart  Contract   & connnection to Particle network can be found here:  https://github.com/Vikash-8090-Yadav/UHACK/blob/main/Frontend/src/components/Hooks/Connection.jsx
 
 
