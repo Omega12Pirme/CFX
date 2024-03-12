@@ -1,4 +1,4 @@
-# This project is made under U HACK
+![image](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/026c1c96-665e-4d6b-a3ea-34650509ea63)# This project is made under U HACK
 
 ![Screenshot from 2024-03-12 10-08-04](https://github.com/Vikash-8090-Yadav/UHACK/assets/85225156/aadc70ae-bf91-4486-8294-d77cf0bb42e0)
 
@@ -35,10 +35,16 @@ Therefore, through DAO (decentralized organizations) we can create structures so
 
 ## Smart Contract deployed on Conflux testnet testnet
 - Smart contract -0x2C8e10de89319BEdD4535fe668B659e6e1dF5593
-- https://evmtestnet.confluxscan.net/address/0x2c8e10de89319bedd4535fe668b659e6e1df5593
+  - https://evmtestnet.confluxscan.net/address/0x2c8e10de89319bedd4535fe668b659e6e1df5593
 
   ![Screenshot from 2024-03-12 10-14-21](https://github.com/Vikash-8090-Yadav/UHACK/assets/85225156/766acb22-cf33-4e22-aa1b-7cf4c666c096)
 
+
+- Particle Network EOA - 0x579d7FD1D8499D6b4Aa1e48aEEcb903ff9cd8D4F
+
+https://evmtestnet.confluxscan.net/address/0x579d7fd1d8499d6b4aa1e48aeecb903ff9cd8d4f
+
+![Screenshot from 2024-03-12 10-45-59](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/c0282e65-3049-43f5-bb9e-055e640bebf0)
 
 
 # Features of TreasuryConflux Club
@@ -84,12 +90,37 @@ TreasuryConflux  Club allows you to manage investment clubs, and to spread acces
 ## What you can currently do in this version is:
 
 - Create investment clubs: Just define a name and the club will be associated with the account of the user who creates it (owner).
+
+  ![Screenshot from 2024-03-12 10-34-14](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/d38f9d3e-31c2-40a1-ae46-0a0532670841)
+
 - Join or leave clubs: Anyone with an COnflux blockchain account can join the available investment clubs, as well as leave one, with just a couple of clicks.
+
+  ![Screenshot from 2024-03-12 10-36-26](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/881186e2-8b01-46a4-9df6-0d11146f0bbe)
+
 - Contribute to the club: Any member of a club can contribute to the common fund (pool), depositing CFX coins that can be used in proposals.
+
+  https://evmtestnet.confluxscan.net/tx/0x25753e64b4442b30384da4996e79286defb99de59705406b4388aeb9930c3550
+
+![Screenshot from 2024-03-12 10-33-04](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/ddd727f0-465f-4350-8706-1c9a3eaef938)
+
 - Create and Vote on Proposals: Any member who has contributed funds to the club pool can create proposals, giving a description, amount (not to exceed the pool amount), and recipient, with a view to investing in any business/person in a project. Also, all members can approve or reject the proposal (only one vote per member is allowed on each proposal).
+
+https://evmtestnet.confluxscan.net/tx/0xbb17c3f685de48ff629cd02f107ff89ff01ce93996fd71519057b210a27b09da
+
+ ![Screenshot from 2024-03-12 10-38-12](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/879eb640-f62e-455c-b951-166033ddfa67)
+
 - Run Proposals: A proposal owner can execute a proposal (if approval is greater than rejection), which will cause the proposal amount to be sent to the specified recipient. The owner can also close a proposal, in case of not continuing with it, either as a cancellation, publication error or to avoid sending funds.
+
+  https://evmtestnet.confluxscan.net/tx/0x25753e64b4442b30384da4996e79286defb99de59705406b4388aeb9930c3550
+
+![Screenshot from 2024-03-12 10-48-46](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/9649de72-d6ee-4f7c-8122-dce327aa71b8)
+
+
+  
 - Timing voting:  After  creation of proposal there is only about 5 min time is given to the  mmeber to  vote.
 
+
+![Screenshot from 2024-03-12 10-41-43](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/302b2201-f188-4820-a3c3-12359ecf3472)
 
 ## Restrictions
 The club smart contract has some restrictions, similar to real hedge funds:
