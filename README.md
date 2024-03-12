@@ -1,18 +1,19 @@
 # This project is made under U HACK
 
-![image](https://github.com/Vikash-8090-Yadav/TreasuryAvlanch/assets/85225156/751cd465-f947-438b-873d-3920f33481f3)
+![Screenshot from 2024-03-12 10-08-04](https://github.com/Vikash-8090-Yadav/UHACK/assets/85225156/aadc70ae-bf91-4486-8294-d77cf0bb42e0)
 
 
 
 
-# TreasuryAvlanch
+
+# TreasuryConflux
 
 
 For years I have wanted to participate in fund initiatives to invest in projects (startups and others), but the bureaucracy, the high requirements, and many other problems make it very difficult. And it is something that not only I experience, but also many other people who have a little money and want to support projects in the medium/long term.
 
 The exact size of the private investment fund market is difficult to determine, as there is no single, comprehensive source of data. However, it is estimated that this market has experienced significant growth in recent decades. According to Bain & Company's Global Private Equity Report 2021, assets under management in the private equity industry reached a record of approximately US$4.6 trillion in 2020. In addition to traditional private equity, there are also other types of private investment funds, such as hedge funds, venture capital funds, and private debt funds. Each of these segments has distinct characteristics and investment approaches.
 
-Therefore, through DAO (decentralized organizations) we can create structures so that anyone can invest, through investment clubs (by affinity of ideas, professional relationship, etc.) through Blockchain from anywhere in the world and with fewer requirements. That is why TreasuryAvlanch  was born.
+Therefore, through DAO (decentralized organizations) we can create structures so that anyone can invest, through investment clubs (by affinity of ideas, professional relationship, etc.) through Blockchain from anywhere in the world and with fewer requirements. That is why TreasuryConflux  was born.
 
 <br>
 
@@ -33,8 +34,8 @@ Therefore, through DAO (decentralized organizations) we can create structures so
 
 
 
-## Smart Contract deployed on Polygon testnet
-- Smart contract Account - 0xbB40AfFB62bD0e5Df0933624B9B193B218197C6e
+## Smart Contract deployed on Conflux testnet testnet
+- Smart contract -
 - https://testnet.snowtrace.io/address/0xbB40AfFB62bD0e5Df0933624B9B193B218197C6e
 ![Screenshot from 2024-02-18 05-40-52](https://github.com/Vikash-8090-Yadav/TreasuryAvlanch/assets/85225156/332a2246-2ed2-4950-9d3a-b5bd54e50938)
 
