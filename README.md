@@ -36,29 +36,26 @@ Therefore, through DAO (decentralized organizations) we can create structures so
 
 ## Smart Contract deployed on Conflux testnet testnet
 - Smart contract -
-- https://testnet.snowtrace.io/address/0xbB40AfFB62bD0e5Df0933624B9B193B218197C6e
-![Screenshot from 2024-02-18 05-40-52](https://github.com/Vikash-8090-Yadav/TreasuryAvlanch/assets/85225156/332a2246-2ed2-4950-9d3a-b5bd54e50938)
+- https://evmtestnet.confluxscan.net/address/0x2c8e10de89319bedd4535fe668b659e6e1df5593
 
-
-# Features of TreasuryAvlanch Club
-
-- Gasless Transaction:  The gas Manager will pay for the gas fee to execute this userOp demonstrating the sponsorship part. and this is provided by the particle Gas manager
+  ![Screenshot from 2024-03-12 10-14-21](https://github.com/Vikash-8090-Yadav/UHACK/assets/85225156/766acb22-cf33-4e22-aa1b-7cf4c666c096)
 
 
 
-**Transaction**
-
-![Screenshot from 2024-02-18 05-46-00](https://github.com/Vikash-8090-Yadav/TreasuryAvlanch/assets/85225156/dd3f3c00-7f77-45b9-b2f5-91c16c000c2f)
+# Features of TreasuryConflux Club
 
 
 - web2 user  onboard: I  am uisng particle network for the Login which show Common authentication mechnaism like Google,Discord,Facebook
+- 
+![Screenshot from 2024-03-12 10-17-27](https://github.com/Vikash-8090-Yadav/UHACK/assets/85225156/d2cbddb4-3d7e-482c-be9f-a5ad0215279a)
 
-![Screenshot from 2024-02-18 05-55-43](https://github.com/Vikash-8090-Yadav/TreasuryAvlanch/assets/85225156/555b5684-4594-4173-933f-34e6ff25e0e4)
 
 
-  **SCA inbuilt wallet for easy acess for naive users**
 
-![Screenshot from 2024-02-18 05-48-43](https://github.com/Vikash-8090-Yadav/TreasuryAvlanch/assets/85225156/3cb7c6aa-edc3-428b-86c6-b10efa66de13)
+  **Particle Network EOA for onbaording **
+
+![Screenshot from 2024-03-12 10-19-41](https://github.com/Vikash-8090-Yadav/UHACK/assets/85225156/a8a69992-cd1a-4163-b348-eefa3718d187)
+
 
 
 
@@ -77,42 +74,19 @@ Therefore, through DAO (decentralized organizations) we can create structures so
 
               );
 ```
-All code for   Smart  Contract Account  & connnection to Particle network can be found here:  https://github.com/Vikash-8090-Yadav/TreasuryAvlanch/blob/main/Frontend/src/components/Hooks/Connection.jsx
-<be>
-
-
-## ChainLinkCCIP
-
-Whenever anyone creates the  proposal he/ she will get automatically incentivized by CCIP-BnM. It's just to  support  members to create and onboard more and more club members. 
-
-However, each member has the option to choose on which chain and address they want  the tokens. 
-
-The flow for this is:
-
-```
-sourceChain: AvlancheFuji (Fixed)
-destinationChain (User choice)
- destinationAccount (User Choice)
- tokenAddress (Avalanche BnM)
- amount (FIXED 0.001)
- feeTokenAddress (FIXED LINK ON AVALANCHE)
-```
-
-Here's the transaction details: https://ccip.chain.link/msg/0xdec6efc53c798163c704be31e1ffe6a483e83d2147175c2ebd7e77daf121cf8a
-
-![Screenshot from 2024-02-19 07-38-00](https://github.com/Vikash-8090-Yadav/TreasuryAvlanch/assets/85225156/0606b5f8-7d77-44b4-8d62-1816d10861f4)
+All code for   Smart  Contract   & connnection to Particle network can be found here:  https://github.com/Vikash-8090-Yadav/UHACK/blob/main/Frontend/src/components/Hooks/Connection.jsx
 
 
 
 ## 💡Introduction
 
-TreasuryAvlanch  Club allows you to manage investment clubs, and to spread access to participate in investment funds to anyone, decentralized, agile, and without bureaucracy.Implementing a comprehensive on-chain governance system allows DataDAO members to create and vote on proposals, covering aspects such as member management, dataset storage and distribution, and token distribution. This ensures a democratic and transparent decision-making process within the DAO.
+TreasuryConflux  Club allows you to manage investment clubs, and to spread access to participate in investment funds to anyone, decentralized, agile, and without bureaucracy.Implementing a comprehensive on-chain governance system allows DataDAO members to create and vote on proposals, covering aspects such as member management, dataset storage and distribution, and token distribution. This ensures a democratic and transparent decision-making process within the DAO.
 
 ## What you can currently do in this version is:
 
 - Create investment clubs: Just define a name and the club will be associated with the account of the user who creates it (owner).
-- Join or leave clubs: Anyone with an Avlanche blockchain account can join the available investment clubs, as well as leave one, with just a couple of clicks.
-- Contribute to the club: Any member of a club can contribute to the common fund (pool), depositing AVAX coins that can be used in proposals.
+- Join or leave clubs: Anyone with an COnflux blockchain account can join the available investment clubs, as well as leave one, with just a couple of clicks.
+- Contribute to the club: Any member of a club can contribute to the common fund (pool), depositing CFX coins that can be used in proposals.
 - Create and Vote on Proposals: Any member who has contributed funds to the club pool can create proposals, giving a description, amount (not to exceed the pool amount), and recipient, with a view to investing in any business/person in a project. Also, all members can approve or reject the proposal (only one vote per member is allowed on each proposal).
 - Run Proposals: A proposal owner can execute a proposal (if approval is greater than rejection), which will cause the proposal amount to be sent to the specified recipient. The owner can also close a proposal, in case of not continuing with it, either as a cancellation, publication error or to avoid sending funds.
 - Timing voting:  After  creation of proposal there is only about 5 min time is given to the  mmeber to  vote.
@@ -128,9 +102,9 @@ The club smart contract has some restrictions, similar to real hedge funds:
 
 
 ## 💥 Challenges we ran into
-I faced issue with the accout abstraction  bundler and gas manager.
-I faced issue with the persistance of Particle network gets solved  by the particle mentor
-Faced issue with the idea of CCIP as my dapp controls  and based on Dao. 
+- I faced issue with the accout abstraction  bundler and gas manager.
+- I faced issue with the persistance of Particle network gets solved  by the particle mentor
+
     
 <br>
 
@@ -149,7 +123,7 @@ Faced issue with the idea of CCIP as my dapp controls  and based on Dao.
     <tr>
       <td>Vercel</td>
       <td>
-        https://treasury-avlanch.vercel.app/
+        https://uhack.vercel.app/
       </td>
     </tr>
     </tr>
@@ -159,14 +133,14 @@ Faced issue with the idea of CCIP as my dapp controls  and based on Dao.
 
 ## 🚀 Setting up the project locally
 
-To run the  TreasuryAvlanch Club locally, follow these steps:
+To run the  TreasuryConflux Club locally, follow these steps:
 1. Clone the repository:
  ```bash
- git clone  https://github.com/Vikash-8090-Yadav/TreasuryAvlanch.git
+ https://github.com/Vikash-8090-Yadav/TreasuryConflux.git
  ```
  2. Navigate to the project directory:
 ```bash
-cd  TreasuryAvlanch
+cd  TreasuryConflux
 ```
 3. Node Re-versioning
 
@@ -192,7 +166,6 @@ Open your web browser and visit the URL SHOWING IN UR TERMINAL to interact with 
 
 [![Powered by Lighthouse](https://img.shields.io/badge/Powered_by-Lighthouse-ff69b4?logo=lighthouse)](https://lighthouse.filecoin.io/)
 [![Built with React.js](https://img.shields.io/badge/Built_with-React.js-61DAFB?logo=react)](https://reactjs.org/)
-[![Developed in Motoko](https://img.shields.io/badge/Developed_in-Motoko-2196F3?logo=dfinity)](https://sdk.dfinity.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Styled_with-Tailwind_CSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 [![Powered by Ethereum](https://img.shields.io/badge/Powered_by-Ethereum-3C3C3D?logo=ethereum)](https://ethereum.org/)
 
@@ -202,10 +175,8 @@ Open your web browser and visit the URL SHOWING IN UR TERMINAL to interact with 
 | Tailwind CSS      | Utility-first CSS framework for building custom designs   | [Tailwind CSS](https://tailwindcss.com/)              |
 | Solidity | Programming language used for smart contract development on the Ethereum blockchain | https://docs.soliditylang.org/ |
 |LightHouse | Store file Secure, Reliable, & Lightning-Fast with Lighthouse. |https://www.lighthouse.storage/|
-| Avlanche |Avalanche is a decentralized platform and blockchain protocol that aims to provide a highly scalable and customizable network for decentralized applications (dApps) and custom blockchain networks. .| https://www.avax.network/|
+| conflux |Building a multi-chain ecosystem to enable creators, communities, and markets to connect globally across borders and protocols. As the only regulatory compliant chain in China, Conflux is facilitating entry to the Asian market for other globally minded crypto projects.| https://confluxnetwork.org/|
 | Particle Network |The Intent-Centric Modular Access Layer of Web |https://particle.network/|
-| ChainLink  |ChainLink aims to facilitate smart contracts on various blockchain platforms to securely interact with external data sources, APIs, and payment systems. |https://chain.link/|
-
 
 
 <be>
@@ -213,7 +184,7 @@ Open your web browser and visit the URL SHOWING IN UR TERMINAL to interact with 
 
 ## 🎥 Video Demo
 
-https://youtu.be/bWRefTx7hUo
+
 
 
 ## 🤝 Contributing
