@@ -3,7 +3,8 @@ import { ethereum, BigInt, Address } from "@graphprotocol/graph-ts"
 import {
   ClubCreated,
   ClubInfoEvent,
-  ProposalCreated
+  ProposalCreated,
+  ProposalVoted
 } from "../generated/Contract/Contract"
 
 export function createClubCreatedEvent(
@@ -117,4 +118,33 @@ export function createProposalCreatedEvent(
   )
 
   return proposalCreatedEvent
+}
+
+export function createProposalVotedEvent(
+  clubId: BigInt,
+  proposalId: BigInt,
+  voter: Address,
+  vote: boolean
+): ProposalVoted {
+  let proposalVotedEvent = changetype<ProposalVoted>(newMockEvent())
+
+  proposalVotedEvent.parameters = new Array()
+
+  proposalVotedEvent.parameters.push(
+    new ethereum.EventParam("clubId", ethereum.Value.fromUnsignedBigInt(clubId))
+  )
+  proposalVotedEvent.parameters.push(
+    new ethereum.EventParam(
+      "proposalId",
+      ethereum.Value.fromUnsignedBigInt(proposalId)
+    )
+  )
+  proposalVotedEvent.parameters.push(
+    new ethereum.EventParam("voter", ethereum.Value.fromAddress(voter))
+  )
+  proposalVotedEvent.parameters.push(
+    new ethereum.EventParam("vote", ethereum.Value.fromBoolean(vote))
+  )
+
+  return proposalVotedEvent
 }

@@ -67,6 +67,9 @@ event ProposalCreated(
     );
 
 
+    event ProposalVoted(uint256 indexed clubId, uint256 indexed proposalId, address indexed voter, bool vote);
+
+
 
 
 
@@ -249,6 +252,8 @@ event ProposalCreated(
         } else {
             proposal.votesAgainst += 1;
         }
+
+        emit ProposalVoted(clubId, proposalId, msg.sender, vote);
     }
 
        function policyOK(uint256 clubId,uint256 proposalId) internal view returns (bool) {

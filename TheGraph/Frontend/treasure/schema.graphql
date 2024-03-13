@@ -35,3 +35,14 @@ type ProposalCreated @entity(immutable: true) {
   blockTimestamp: BigInt!
   transactionHash: Bytes!
 }
+
+type ProposalVoted @entity(immutable: true) {
+  id: Bytes!
+  clubId: BigInt! # uint256
+  proposalId: BigInt! # uint256
+  voter: Bytes! # address
+  vote: Boolean! # bool
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}

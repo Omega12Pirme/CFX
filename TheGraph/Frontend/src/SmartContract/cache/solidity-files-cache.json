@@ -38,8 +38,8 @@
       ]
     },
     "/home/vishal/Desktop/allgitfiles/UHACK/TheGraph/Frontend/src/SmartContract/contracts/InvestmentClub.sol": {
-      "lastModificationDate": 1710324826993,
-      "contentHash": "5bbb35672c4c4ec59964bb3e4b47313f",
+      "lastModificationDate": 1710329807728,
+      "contentHash": "f790f92c44a971c3316b9877c9e06e81",
       "sourceName": "contracts/InvestmentClub.sol",
       "solcConfig": {
         "version": "0.8.10",

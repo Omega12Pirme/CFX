@@ -1,12 +1,14 @@
 import {
   ClubCreated as ClubCreatedEvent,
   ClubInfoEvent as ClubInfoEventEvent,
-  ProposalCreated as ProposalCreatedEvent
+  ProposalCreated as ProposalCreatedEvent,
+  ProposalVoted as ProposalVotedEvent
 } from "../generated/Contract/Contract"
 import {
   ClubCreated,
   ClubInfoEvent,
-  ProposalCreated
+  ProposalCreated,
+  ProposalVoted
 } from "../generated/schema"
 
 export function handleClubCreated(event: ClubCreatedEvent): void {
@@ -54,6 +56,22 @@ export function handleProposalCreated(event: ProposalCreatedEvent): void {
   entity.destination = event.params.destination
   entity.description = event.params.description
   entity.Cid = event.params.Cid
+
+  entity.blockNumber = event.block.number
+  entity.blockTimestamp = event.block.timestamp
+  entity.transactionHash = event.transaction.hash
+
+  entity.save()
+}
+
+export function handleProposalVoted(event: ProposalVotedEvent): void {
+  let entity = new ProposalVoted(
+    event.transaction.hash.concatI32(event.logIndex.toI32())
+  )
+  entity.clubId = event.params.clubId
+  entity.proposalId = event.params.proposalId
+  entity.voter = event.params.voter
+  entity.vote = event.params.vote
 
   entity.blockNumber = event.block.number
   entity.blockTimestamp = event.block.timestamp

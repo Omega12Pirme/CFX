@@ -8,9 +8,9 @@ dataSources:
     name: Contract
     network: mumbai
     source:
-      address: "0xd3fE834a7a8E909B7c93F671e0A2d394A583bb40"
+      address: "0x41C00c85867773e077c39081aefAf6197e63e9cE"
       abi: Contract
-      startBlock: 46993967
+      startBlock: 46996057
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -19,6 +19,7 @@ dataSources:
         - ClubCreated
         - ClubInfoEvent
         - ProposalCreated
+        - ProposalVoted
       abis:
         - name: Contract
           file: ./abis/Contract.json
@@ -29,4 +30,6 @@ dataSources:
           handler: handleClubInfoEvent
         - event: ProposalCreated(indexed uint256,uint256,address,uint256,address,string,string)
           handler: handleProposalCreated
+        - event: ProposalVoted(indexed uint256,indexed uint256,indexed address,bool)
+          handler: handleProposalVoted
       file: ./src/contract.ts
