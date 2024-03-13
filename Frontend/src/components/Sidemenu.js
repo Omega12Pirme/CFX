@@ -22,7 +22,7 @@ function SideMenu({ isOpen, setIsOpen, smartAccount, logout, address }) {
   const address1 = localStorage.getItem("filWalletAddress");
 
   function hndclck(){
-    window.open(`https://testnet.snowtrace.io/address/${address1}`, '_blank');
+    window.open(`https://evmtestnet.confluxscan.net/address/${address1}`, '_blank');
   }
   const {ownerAddress,accountAddress,provider, handleLogin,userInfo,loading} = UseAlchemy();
   const [value, setValue] = useState(0);
@@ -152,7 +152,7 @@ close
                       <div className='flex mml '>
                       <EthBadge className="text-white" address={accountAddress} />
                       <button  className="btn bg-blue-500  text-white  px-4 rounded-full" onClick={hndclck}>
-                       View on Fuji explorer
+                       View on Conflux espace explorer
                         
                       </button>
                       </div>
