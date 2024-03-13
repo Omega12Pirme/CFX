@@ -150,9 +150,15 @@ The club smart contract has some restrictions, similar to real hedge funds:
       <th>URL</th>
     </tr>
     <tr>
-      <td>Vercel</td>
+      <td>Vercel(Conflux Network)</td>
       <td>
         https://uhack.vercel.app/
+      </td>
+    </tr>
+   <tr>
+      <td>The Graph(Matic Network)</td>
+      <td>
+       https://treasury-conflux.vercel.app/
       </td>
     </tr>
     </tr>
