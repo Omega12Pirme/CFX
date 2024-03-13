@@ -1,0 +1,45 @@
+type ClubInfoEvent @entity(immutable: true) {
+  id: Bytes!
+  Contract_id: BigInt! # uint256
+  name: String! # string
+  memberCounter: BigInt! # uint256
+  proposalCounter: BigInt! # uint256
+  pool: BigInt! # uint256
+  CID: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ProposalCreated @entity(immutable: true) {
+  id: Bytes!
+  clubId: BigInt! # uint256
+  proposalId: BigInt! # uint256
+  creator: Bytes! # address
+  amount: BigInt! # uint256
+  destination: Bytes! # address
+  description: String! # string
+  Cid: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ProposalInfoEvent @entity(immutable: true) {
+  id: Bytes!
+  clubId: BigInt! # uint256
+  proposalId: BigInt! # uint256
+  creator: Bytes! # address
+  amount: BigInt! # uint256
+  destination: Bytes! # address
+  status: String! # string
+  description: String! # string
+  votesFor: BigInt! # uint256
+  votesAgainst: BigInt! # uint256
+  proposedAt: BigInt! # uint256
+  proposalExpireAt: BigInt! # uint256
+  Cid: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
