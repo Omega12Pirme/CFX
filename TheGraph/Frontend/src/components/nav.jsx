@@ -37,7 +37,7 @@ function Nav() {
   href="/"
 >
   
-  <div className=" mmh text-lg mx-3">Alchemy Club</div>
+  <div className=" mmh text-lg mx-3">Club</div>
 </a>
 </div>
   <button
