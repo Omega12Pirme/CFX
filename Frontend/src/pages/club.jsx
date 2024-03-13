@@ -82,35 +82,16 @@ async function leaveClub() {
             const encodedData = iface.encodeFunctionData("leaveClub", [clubId]);
             const GAS_MANAGER_POLICY_ID = "479c3127-fb07-4cc6-abce-d73a447d2c01";
         
-            provider.withAlchemyGasManager({
-              policyId: GAS_MANAGER_POLICY_ID, // replace with your policy id, get yours at https://dashboard.alchemy.com/
-              entryPoint: "0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789",
-            });
-        
-        const result = await provider.sendUserOperation({
-                target: marketplaceAddress, // Replace with the desired target address
-                data: encodedData, // Replace with the desired call data
-          
-              });
-        
-              const txHash = await provider.waitForUserOperationTransaction(
-                result.hash
-              );
-            
-              console.log("\nTransaction hash: ", txHash);
-            
-              const userOpReceipt = await provider.getUserOperationReceipt(
-                result.hash
-              );
-            
-              console.log("\nUser operation receipt: ", userOpReceipt);
-            
-              const txReceipt = await provider.rpcClient.waitForTransactionReceipt({
-                hash: txHash,
-              });
-            
-              console.log(txReceipt);
-              // console.log("txHash", receipt.transactionHash);
+            const signer = provider.getSigner();
+
+              console.log("singer",signer);
+              const tx = {
+                to: marketplaceAddress,
+                data: encodedData,
+              };
+              const txResponse = await signer.sendTransaction(tx);
+              const txReceipt = await txResponse.wait();
+
               notification.success({
                 message: 'Transaction Successful',
                 description: (
