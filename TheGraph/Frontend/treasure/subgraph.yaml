@@ -1,0 +1,32 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Contract
+    network: mumbai
+    source:
+      address: "0xd3fE834a7a8E909B7c93F671e0A2d394A583bb40"
+      abi: Contract
+      startBlock: 46993968
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - ClubCreated
+        - ClubInfoEvent
+        - ProposalCreated
+      abis:
+        - name: Contract
+          file: ./abis/Contract.json
+      eventHandlers:
+        - event: ClubCreated(indexed uint256,string,string,indexed address)
+          handler: handleClubCreated
+        - event: ClubInfoEvent(uint256,string,uint256,uint256,uint256,string)
+          handler: handleClubInfoEvent
+        - event: ProposalCreated(indexed uint256,uint256,address,uint256,address,string,string)
+          handler: handleProposalCreated
+      file: ./src/contract.ts

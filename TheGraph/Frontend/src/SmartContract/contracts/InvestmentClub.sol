@@ -48,20 +48,12 @@ contract InvestmentClub {
 );
 
 
-event ProposalInfoEvent(
-    uint256 clubId,
-    uint256 proposalId,
-    address creator,
-    uint256 amount,
-    address destination,
-    string status,
-        string description,
-        uint256 votesFor,
-        uint256 votesAgainst,
-        uint256 proposedAt,
-        uint256 proposalExpireAt,
-        string Cid
-);
+event ClubCreated(
+        uint256 indexed clubId,
+        string name,
+        string CID,
+        address indexed creator
+    );
 
 
 event ProposalCreated(
@@ -126,7 +118,7 @@ event ProposalCreated(
         return club;
     }
 
-    function getMyClubs() public  returns (ClubInfo[] memory) {
+    function getMyClubs() public view returns (ClubInfo[] memory) {
         ClubInfo[] memory clubsInfo = new ClubInfo[](clubCounter);
         uint256 index = 0;
         for (uint256 i = 1; i <= clubCounter; i++) {
@@ -135,14 +127,7 @@ event ProposalCreated(
                 clubsInfo[index] = ClubInfo(club.id, club.name, club.memberCounter,club.proposalCounter, club.pool,club.CID);
                 index++;
 
-                emit ClubInfoEvent(
-                club.id,
-                club.name,
-                club.memberCounter,
-                club.proposalCounter,
-                club.pool,
-                club.CID
-            );
+                
             }
         }
 
@@ -167,6 +152,9 @@ event ProposalCreated(
         club.members[msg.sender] = member;
         
         clubCounter = clubId;
+
+
+        emit ClubCreated(clubId, name, Cid, msg.sender);
         
         return clubId;
     }
@@ -295,7 +283,7 @@ event ProposalCreated(
         proposal.status = "Closed";
     }
 
-    function getProposalById(uint256 clubId, uint256 proposalId) public  returns (ProposalInfo memory) {
+    function getProposalById(uint256 clubId, uint256 proposalId) public  view returns (ProposalInfo memory) {
         require(isClubIdExist(clubId), "the club does not exist");
         require(isProposalIdExist(proposalId, clubId), "The proposal does not exist");
         ClubLibrary.Proposal storage proposal = clubs[clubId].proposals[proposalId];
@@ -311,20 +299,7 @@ event ProposalCreated(
         proposal.Cid
         );
 
-        emit ProposalInfoEvent(
-        clubId,
-        proposalId,
-        proposal.creator,
-        proposal.amount,
-        proposal.destination,
-        proposal.status,
-        proposal.description,
-        proposal.votesFor,
-        proposal.votesAgainst,
-        proposal.proposedAt,
-        proposal.proposalExpireAt,
-        proposal.Cid
-    );
+        
         return proposalInfo;
     }
 
