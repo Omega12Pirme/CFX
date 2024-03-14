@@ -130,6 +130,30 @@ The club smart contract has some restrictions, similar to real hedge funds:
 - Only proposal creators can execute them.
 
 
+## The Graph 
+
+The subgraph is: https://thegraph.com/studio/subgraph/treasure/playground
+Refer to the version 2 for this.
+
+![Screenshot from 2024-03-14 07-44-40](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/630a0e52-1167-49eb-a83f-860b3e498f67)
+
+I created this subgraph and used for creating club  dashboard, Proposal dashboard and voting dashboard. 
+
+![Screenshot from 2024-03-14 07-45-54](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/2b951318-00a3-4a1c-8694-a362bae38298)
+
+## Account Abstraction 
+The smart contract Account is: https://mumbai.polygonscan.com/address/0xd8448C6F5Eba8C621268814961Bd32892E866adb
+
+- Gasless Transaction: Gas Manager will pay for the gas fee to execute this userOp demonstrating the sponsorship part.
+- 
+![293816119-ba038927-7415-45da-82b6-f2d279981d91](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/419cb5aa-1e99-46e1-97c8-c55e5c40023f)
+
+![293816082-0e4a65ca-1875-40df-b711-20eb79388d2e (1)](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/9a991cb6-c3b5-4ced-a72a-e60dbda70396)
+
+- GASLESS TRANSACTIONs
+
+![Screenshot from 2024-03-14 07-48-02](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/4dedfc7f-04a1-4d02-996b-43f49e18d2f9)
+
 ## 💥 Challenges we ran into
 - I faced issue with the accout abstraction  bundler and gas manager.
 - I faced issue with the persistance of Particle network gets solved  by the particle mentor
