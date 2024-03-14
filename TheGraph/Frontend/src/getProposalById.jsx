@@ -1,6 +1,6 @@
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
+import { createClient } from "urql";
 import $ from 'jquery'; 
 
 import { marketplaceAddress } from "./config";
@@ -28,6 +28,7 @@ async function getContract(userAddress) {
 
 
 async function getProposalById(){
+  
 
 
 var clubId = localStorage.getItem("clubId");

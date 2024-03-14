@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Link,Navigate } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 
-
+import Propos from "../clubsproposal";
 
 import GetMyClubs from "../getMyClubs";
 import Login from "../pages/login";
@@ -291,6 +291,13 @@ function Base() {
                   </p>
                 </div>
               </div>
+            </div>
+
+
+            <div className="card-header m-0 font-weight-bold "> 
+              Recents  Proposal:
+<Propos/>
+
             </div>
           </div>
           {/* Content Row */}

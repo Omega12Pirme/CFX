@@ -11,7 +11,7 @@ import {Web3} from 'web3';
 
 import ABI from "../SmartContract/artifacts/contracts/InvestmentClub.sol/InvestmentClub.json"
 
-
+import Memos from "../voters";
 import axios from 'axios';
 import getProposalById from '../getProposalById';
 import GetClub from '../getclub';
@@ -425,9 +425,13 @@ function Proposal() {
   }
 
 
+  
+
+
     useEffect(() => {
         {
             GetClub();verifyUserInClub();getProposalById();
+            <Memos/>
         }
       }, []);
 
@@ -642,6 +646,7 @@ function Proposal() {
                     </div>
                   </div>
                   <div className="row my_votes">
+                    <Memos/>
                     <span className="loading_message">Loading...</span>
                   </div>
                 </div>
