@@ -16,6 +16,7 @@ Therefore, through DAO (decentralized organizations) we can create structures so
 <br>
 
 
+
 </div>
 <a href="#top">Back to top</a>
 
