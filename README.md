@@ -37,6 +37,8 @@ The club smart contract has some restrictions, similar to real hedge funds:
 
 ## The Graph 
 
+The code for the Subgraph is in this folder: https://github.com/Omega12Pirme/CFX/tree/main/TheGraph/Frontend/treasure
+
 The subgraph is: https://thegraph.com/studio/subgraph/treasure/playground
 Refer to the version 2 for this.
 
@@ -45,6 +47,11 @@ Refer to the version 2 for this.
 I created this subgraph and used for creating club  dashboard, Proposal dashboard and voting dashboard. 
 
 ![Screenshot from 2024-03-14 07-45-54](https://github.com/Vikash-8090-Yadav/TreasuryConflux/assets/85225156/2b951318-00a3-4a1c-8694-a362bae38298)
+
+
+## The Graph query can be find  in this folder : https://github.com/Omega12Pirme/CFX/blob/main/TheGraph/Frontend/src/voters.jsx
+
+![Screenshot from 2024-06-12 11-44-46](https://github.com/Omega12Pirme/CFX/assets/105157723/e8c8a806-2e63-417b-91ca-301a3e9864f4)
 
 
 ## 💥 Challenges we ran into
